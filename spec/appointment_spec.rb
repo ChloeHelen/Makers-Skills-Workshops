@@ -7,6 +7,7 @@ describe Appointment do
   describe '#title' do
     it 'has a title' do
       expect(appointment.title).to eq "Test appointment"
+
     end
   end
 
@@ -14,6 +15,7 @@ describe Appointment do
 
   describe '#pretty_location' do
     it 'pretty-prints the location' do
+      p appointment.pretty_location
       expect(appointment.pretty_location).to eq "50 Commercial St, London E1 6LT, UK"
     end
   end
